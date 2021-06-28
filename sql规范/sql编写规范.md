@@ -28,13 +28,15 @@
    错误代码：
    ```sql
    SELECT * FROM A
-   WHERE DATE(create_time) = '20210101';
+   WHERE DATE(create_time) = '20210101'
+   ;
    ```
    正确代码：  
    ```sql
    SELECT * FROM A
    WHERE create_time >= '20210101' 
    AND create_time < '20210102'
+   ;
    ```
 
 4. 避免数据类型的隐式转换
@@ -43,7 +45,8 @@
    CREATE TABLE A (
        id INT,       
        pname VARCHAR(20)   
-       );
+       )
+    ;
    ```
    索引：
    ```sql
@@ -89,6 +92,7 @@
        from zd_unit_code 
        WHERE lvl > 3 
        )
+    ;
    ```
    修改后代码：  
    ```sql
@@ -97,6 +101,7 @@
    INNER JOIN zd_unit_code b 
          ON a.dept_sn2 = b.unit_sn 
    WHERE b.lvl > 3
+   ;
    ```
 
 
