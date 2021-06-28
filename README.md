@@ -37,4 +37,4 @@
 | ---  | ----  | ---- |
 | 金诚 | NikolaiJ | jc@group-ds.com |  
 | 林晨 | cenyanming | lc@group-ds.com |
-| 张鑫 | ??? | ??? |
+| 张鑫 | xxxeeec | zx@group-ds.com |
