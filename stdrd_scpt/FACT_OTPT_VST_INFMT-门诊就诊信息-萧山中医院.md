@@ -46,16 +46,16 @@ ms.xgsj AS upd_dt, --更新日期
 '' AS upd_stff_cd, --更新职工工号
 '' AS upd_stff_nm, --更新职工姓名
 '' AS vld_flg --有效标识
-FROM BSRUN.YS_MZ_JZLS JZ
-INNER JOIN BSRUN.MS_BRDA MS 
-	ON JZ.BRBH = MS.BRID
-LEFT JOIN BSRUN.GY_YGDM YG
-	ON YG.YGDM=JZ.YSDM
-LEFT JOIN BSRUN.GY_KSDM K
+FROM bsrun.ys_mz_jzls jz
+INNER JOIN bsrun.ms_brda ms 
+	ON jz.brbh = ms.brid
+LEFT JOIN bsrun.gy_ygdm yg
+	ON yg.ygdm=jz.ysdm
+LEFT JOIN bsrun.gy_ksdm k
 	ON JZ.KSDM = K.KSDM
-LEFT JOIN BSRUN.YS_MZ_JBZD JD
-	ON JZ.JZXH=JD.JZXH
-LEFT JOIN BSRUN.MS_GHMX GH
-	ON GH.SBXH=JZ.GHXH
-LEFT JOIN BSRUN.MS_YJ02 YJ
-	ON YJ.SBXH=JZ.JZXH
+LEFT JOIN bsrun.ys_mz_jbzd jd
+	ON jz.jzxh=jd.jzxh
+LEFT JOIN bsrun.ms_ghmx gh
+	ON gh.sbxh=jz.ghxh
+LEFT JOIN bsrun.ms_yj02 yj
+	ON yj.sbxh=jz.jzxh
