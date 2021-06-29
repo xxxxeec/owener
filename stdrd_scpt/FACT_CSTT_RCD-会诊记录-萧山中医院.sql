@@ -1,3 +1,11 @@
+/*
+ *version      :2.01
+ *script name  :FACT_CSTT_RCD(会诊记录)
+ *creaet date  :2021-06-22
+ *author name  :linchen
+ *update date  :2021-06-29
+ *update name  :linchen
+*/
 SELECT
 	t1.sqxh AS elctrnc_apl_no,       --电子申请单编号
 	t1.sqxh AS cstt_rcd_no,       --会诊记录单号
